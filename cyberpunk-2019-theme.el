@@ -1,4 +1,4 @@
-;;; cyberpunk-2019-theme.el --- A retina-scorching cyberpunk theme 
+;;; cyberpunk-2019-theme.el --- A retina-scorching cyberpunk theme
 ;;
 ;;  Copyright (C) 2019 Alex Lynham
 ;;  Licensed under GNU GPLv3
@@ -23,7 +23,7 @@
 ;; URL: https://github.com/the-frey/cyberpunk-2019
 ;;
 ;;; Commentary:
-;;     
+;;
 ;; A custom cyberpunk theme inspired by the Tron: Legacy theme by
 ;; Ian Y.E. Pan and Cyberpunk VS Code theme by Max-SS et al.
 ;;
@@ -40,7 +40,7 @@
  `(bold ((t (:weight normal :foreground "#FF9C00"))))
  `(fringe ((t (:background "#4B3E72"))))
 
- `(mode-line ((t (:foreground "#FFFAFA" :background "#FF9C00"))))
+ `(mode-line ((t (:foreground "#FFFAFA" :background "#262F36"))))
  `(mode-line-inactive ((t (:foreground "#CBECFF" :background "#3D5666"))))
 
  `(highlight ((t (:background "#262F36"))))
@@ -81,7 +81,7 @@
 
  `(clojure-keyword ((t (:foreground "#FFA000"))))
  `(clojure-special ((t (:foreground "#9C00FF"))))
- 
+
  `(show-paren-match-face ((t (:background "#009FFF" :foreground "#FFFAFA"))))
  `(show-paren-mismatch-face ((t (:background "red1" :foreground "white"))))
 
