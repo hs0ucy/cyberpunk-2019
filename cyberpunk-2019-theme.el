@@ -30,101 +30,118 @@
 ;;; Code:
 
 (deftheme cyberpunk-2019
-  "Custom theme by Alex Lynham. Licensed under GNU GPLv3.")
+    "Custom theme by Alex Lynham. Licensed under GNU GPLv3.")
 
 (custom-theme-set-faces
- `cyberpunk-2019
- `(default ((t (:background "#372963" :foreground "#00E3FF" ))))
- `(cursor ((t (:background "#BEFF00"))))
- `(region ((t (:background "#009fff"))))
- `(bold ((t (:weight normal :foreground "#FF9C00"))))
- `(fringe ((t (:background "#4B3E72"))))
+    `cyberpunk-2019
+    `(default ((t (:background "#372963" :foreground "#00E3FF" ))))
+    `(cursor ((t (:background "#BEFF00"))))
+    `(region ((t (:background "#009fff"))))
+    `(bold ((t (:weight normal :foreground "#FF9C00"))))
+    `(fringe ((t (:background "#4B3E72"))))
 
- `(mode-line ((t (:foreground "#FFFAFA" :background "#262F36"))))
- `(mode-line-inactive ((t (:foreground "#CBECFF" :background "#3D5666"))))
+    `(mode-line ((t (:foreground "#FFFAFA" :background "#262F36"))))
+    `(mode-line-inactive ((t (:foreground "#CBECFF" :background "#3D5666"))))
 
- `(highlight ((t (:background "#262F36"))))
+    ;; '(ediff-current-diff-face-A ((t (:background "pale green" :foreground "firebrick"))))
+    ;; '(ediff-current-diff-face-Ancestor ((t (:background "VioletRed" :foreground "Black"))))
+    ;; '(ediff-current-diff-face-B ((t (:background "Yellow" :foreground "DarkOrchid"))))
+    ;; '(ediff-current-diff-face-C ((t (:background "Pink" :foreground "Navy"))))
+    '(ediff-even-diff-face-A ((t (:background "#CBECFF" :foreground "Black"))))
+    '(ediff-even-diff-face-Ancestor ((t (:background "#CBECFF" :foreground "White"))))
+    '(ediff-even-diff-face-B ((t (:background "#CBECFF" :foreground "White"))))
+    '(ediff-even-diff-face-C ((t (:background "#CBECFF" :foreground "Black"))))
+    ;;'(ediff-fine-diff-face-A ((t (:background "sky blue" :foreground "Navy"))))
+    ;; '(ediff-fine-diff-face-Ancestor ((t (:background "Green" :foreground "Black"))))
+    ;; '(ediff-fine-diff-face-B ((t (:background "cyan" :foreground "Black"))))
+    ;; '(ediff-fine-diff-face-C ((t (:background "Turquoise" :foreground "Black"))))
+    '(ediff-odd-diff-face-A ((t (:background "#CBECFF" :foreground "White"))))
+    '(ediff-odd-diff-face-Ancestor ((t (:background "#CBECFF" :foreground "Black"))))
+    '(ediff-odd-diff-face-B ((t (:background "#CBECFF" :foreground "Black"))))
+    '(ediff-odd-diff-face-C ((t (:background "#CBECFF" :foreground "White"))))
 
- `(ido-first-match ((t (:foreground "#D7F0FF" :weight bold))))
- `(ido-only-match ((t (:foreground "#31C0C0"))))
- `(ido-subdir ((t (:foreground "#5DC4FF"))))
+    `(highlight ((t (:background "#262F36"))))
 
- `(isearch ((t (:background "#4D4FBB" :foreground "#FFFAFA"))))
- `(lazy-highlight ((t (:background "#659F93" :foreground "#FFFAFA"))))
+    `(ido-first-match ((t (:foreground "#D7F0FF" :weight bold))))
+    `(ido-only-match ((t (:foreground "#31C0C0"))))
+    `(ido-subdir ((t (:foreground "#5DC4FF"))))
 
- `(linum ((t (:background "#4B3E72" :foreground "#CBEBFF"))))
- `(nlinum-relative-current-face ((t (:inherit linum :background "#4B3E72" :foreground "#BEFF00" :weight normal))))
+    `(isearch ((t (:background "#4D4FBB" :foreground "#FFFAFA"))))
+    `(lazy-highlight ((t (:background "#659F93" :foreground "#FFFAFA"))))
 
- `(font-lock-builtin-face ((t (:foreground "#00FFC1"))))
- `(font-lock-doc-face ((t (:foreground "#7FDEFF" :italic t))))
- `(font-lock-comment-face ((t (:foreground "#CBEBFF"
-                               :background nil
-                               :italic t))))
- `(font-lock-string-face ((t (:foreground "#7FDEFF"))))
- `(font-lock-variable-name-face ((t (:foreground "#FF4081"))))
- `(font-lock-function-name-face ((t (:foreground "#00FF9C"))))
- `(font-lock-keyword-face ((t (:foreground "#00BEFF"))))
- `(font-lock-negation-char-face ((t (:foreground "#5EC4FF"))))
- `(font-lock-preprocessor-face ((t (:foreground "#5EC4FF"))))
- `(font-lock-type-face ((t (:foreground "#FF9C00"))))
- `(font-lock-constant-face ((t (:foreground "#66FFC4"))))
- `(minibuffer-prompt ((t (:foreground "#729FCF" ))))
- `(font-lock-warning-face ((t (:foreground "red" :bold t))))
+    `(linum ((t (:background "#4B3E72" :foreground "#CBEBFF"))))
+    `(nlinum-relative-current-face ((t (:inherit linum :background "#4B3E72" :foreground "#BEFF00" :weight normal))))
 
- `(dashboard-banner-logo-title-face ((t (:inherit default
-                                         :overline t
-                                         :height 1.15
-                                         :family "Monaco"))))
- `(dashboard-heading-face ((t (:inherit default
-                               :foreground "#CBEBFF"
-                               :height 1.1))))
+    `(font-lock-builtin-face ((t (:foreground "#00FFC1"))))
+    `(font-lock-doc-face ((t (:foreground "#7FDEFF" :italic t))))
+    `(font-lock-comment-face ((t (:foreground "#CBEBFF"
+                                     :background nil
+                                     :italic t))))
+    `(font-lock-string-face ((t (:foreground "#7FDEFF"))))
+    `(font-lock-variable-name-face ((t (:foreground "#FF4081"))))
+    `(font-lock-function-name-face ((t (:foreground "#00FF9C"))))
+    `(font-lock-keyword-face ((t (:foreground "#00BEFF"))))
+    `(font-lock-negation-char-face ((t (:foreground "#5EC4FF"))))
+    `(font-lock-preprocessor-face ((t (:foreground "#5EC4FF"))))
+    `(font-lock-type-face ((t (:foreground "#FF9C00"))))
+    `(font-lock-constant-face ((t (:foreground "#66FFC4"))))
+    `(minibuffer-prompt ((t (:foreground "#729FCF" ))))
+    `(font-lock-warning-face ((t (:foreground "red" :bold t))))
 
- `(clojure-keyword ((t (:foreground "#FFA000"))))
- `(clojure-special ((t (:foreground "#9C00FF"))))
+    `(dashboard-banner-logo-title-face ((t (:inherit default
+                                               :overline t
+                                               :height 1.15
+                                               :family "Monaco"))))
+    `(dashboard-heading-face ((t (:inherit default
+                                     :foreground "#CBEBFF"
+                                     :height 1.1))))
 
- `(show-paren-match-face ((t (:background "#009FFF" :foreground "#FFFAFA"))))
- `(show-paren-mismatch-face ((t (:background "red1" :foreground "white"))))
+    `(clojure-keyword ((t (:foreground "#FFA000"))))
+    `(clojure-special ((t (:foreground "#9C00FF"))))
 
- `(org-block ((t (:background "#4B3E72" :foreground "#00E3FF"))))
- `(org-document-title ((t (:height 2.0 :foreground "#CBEBFF"
-                                   :family "Georgia"))))
- `(org-level-1 ((t (:inherit outline-1
-                    :weight bold
-                    :foreground "#7FDEFF"
-                    :height 1.3))))
- `(org-level-2 ((t (:inherit outline-2
-                    :weight bold
-                    :foreground "#00FFC1"
-                    :height 1.1))))
- `(org-level-3 ((t (:inherit outline-3
-                    :weight bold
-                    :foreground "#00BEFF"
-                    :height 1.1))))
- `(org-table ((t (:background "#FF4081" :foreground "#729FCF"))))
+    `(show-paren-match-face ((t (:background "#009FFF" :foreground "#FFFAFA"))))
+    `(show-paren-mismatch-face ((t (:background "red1" :foreground "white"))))
 
- `(rainbow-delimiters-depth-1-face ((t (:foreground "#00FF9C"))))
- `(rainbow-delimiters-depth-2-face ((t (:foreground "#FF4081"))))
- `(rainbow-delimiters-depth-3-face ((t (:foreground "#00BEFF"))))
- `(rainbow-delimiters-depth-4-face ((t (:foreground "#FEF96A"))))
- `(rainbow-delimiters-depth-5-face ((t (:foreground "#C592FF"))))
- `(rainbow-delimiters-depth-6-face ((t (:foreground "#9C00FF"))))
- `(rainbow-delimiters-depth-7-face ((t (:foreground "#FEF96A"))))
- `(rainbow-delimiters-depth-8-face ((t (:foreground "#BEFF00"))))
- `(rainbow-delimiters-depth-9-face ((t (:foreground "#FF00BE"))))
+    `(org-block ((t (:background "#4B3E72" :foreground "#00E3FF"))))
+    `(org-document-title ((t (:height 2.0 :foreground "#CBEBFF"
+                                 :family "Georgia"))))
+    `(org-level-1 ((t (:inherit outline-1
+                          :weight bold
+                          :foreground "#7FDEFF"
+                          :height 1.3))))
+    `(org-level-2 ((t (:inherit outline-2
+                          :weight bold
+                          :foreground "#00FFC1"
+                          :height 1.1))))
+    `(org-level-3 ((t (:inherit outline-3
+                          :weight bold
+                          :foreground "#00BEFF"
+                          :height 1.1))))
+    `(org-table ((t (:background "#FF4081" :foreground "#729FCF"))))
 
- `(helm-header ((t (:foreground "#FF00BE" :background "#372963" :underline nil :box nil))))
- `(helm-source-header ((t (:foreground "#FF4081"
-                           :background "#372963"
-                           :underline nil
-                           :weight bold
-                           :box (:line-width 1 :style released-button)))))
- `(helm-selection-line ((t (:background "#00FF9C" ))))
- `(helm-visible-mark ((t (:background "#4B3E72" :foreground "#00E3FF"))))
- `(helm-candidate-number ((t (:background "#4B3E72" :foreground "#00E3FF"))))
- `(helm-separator ((t (:background "#4B3E72" :foreground "#00E3FF"))))
- `(helm-match ((t (:background "#9C00FF"))))
- `(helm-selection ((t ( :background "#FF9C00" :foreground "#FFFAFA" :underline nil))))
- )
+    `(rainbow-delimiters-depth-1-face ((t (:foreground "#00FF9C"))))
+    `(rainbow-delimiters-depth-2-face ((t (:foreground "#FF4081"))))
+    `(rainbow-delimiters-depth-3-face ((t (:foreground "#00BEFF"))))
+    `(rainbow-delimiters-depth-4-face ((t (:foreground "#FEF96A"))))
+    `(rainbow-delimiters-depth-5-face ((t (:foreground "#C592FF"))))
+    `(rainbow-delimiters-depth-6-face ((t (:foreground "#9C00FF"))))
+    `(rainbow-delimiters-depth-7-face ((t (:foreground "#FEF96A"))))
+    `(rainbow-delimiters-depth-8-face ((t (:foreground "#BEFF00"))))
+    `(rainbow-delimiters-depth-9-face ((t (:foreground "#FF00BE"))))
+
+    `(helm-header ((t (:foreground "#FF00BE" :background "#372963" :underline nil :box nil))))
+    `(helm-source-header ((t (:foreground "#FF4081"
+                                 :background "#372963"
+                                 :underline nil
+                                 :weight bold
+                                 :box (:line-width 1 :style released-button)))))
+    `(helm-selection-line ((t (:background "#00FF9C" ))))
+    `(helm-visible-mark ((t (:background "#4B3E72" :foreground "#00E3FF"))))
+    `(helm-candidate-number ((t (:background "#4B3E72" :foreground "#00E3FF"))))
+    `(helm-separator ((t (:background "#4B3E72" :foreground "#00E3FF"))))
+    `(helm-match ((t (:background "#9C00FF"))))
+    `(helm-selection ((t ( :background "#FF9C00" :foreground "#FFFAFA" :underline nil))))
+    )
 
 (provide-theme 'cyberpunk-2019)
 
