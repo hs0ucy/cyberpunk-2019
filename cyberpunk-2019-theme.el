@@ -117,7 +117,7 @@
                           :weight bold
                           :foreground "#00BEFF"
                           :height 1.1))))
-    `(org-table ((t (:background "#FF4081" :foreground "#729FCF"))))
+    `(org-table ((t (:background "#374750" :foreground "#729FCF"))))
 
     `(rainbow-delimiters-depth-1-face ((t (:foreground "#00FF9C"))))
     `(rainbow-delimiters-depth-2-face ((t (:foreground "#FF4081"))))
